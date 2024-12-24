@@ -1,0 +1,37 @@
+- Conteúdo do curso:
+	* Linguagem de programação C.
+	* Principais recursos de C para trabalhar com estruturas de dados.
+	* Implementação de estruturas de dados não-lineares e lineares.
+	* Manipulação e gerenciamento de memória.
+
+- Lista detalhada de conteúdos do curso:
+	1. Intodução a linguagem C.         [ ]
+		a. Variáveis e tipos de dados.  [ ]
+		b. Estruturas condicionais. 	[ ]
+		c. Laços de repetição.  		[ ]
+		d. Funções.             		[ ]
+		e. Vetores e Matrizes.  		[ ] 
+	2. Ponteiros.						[ ]
+	3. Structs.							[ ]
+	4. Alocação dinâmica.				[ ]
+	5. Listas.   						[ ]
+	6. Filas.    						[ ]
+	7. Pilhas.   						[ ]
+	8. Recursão. 						[ ]
+	9. Árvores.  						[ ]
+
+- Introdução a estrutura de dados: Estruturas de dados é uma área de ciência da computação que trata da organização dos dados em estruturas
+de forma a gerar melhor organização lógica e física desses dados. 
+
+- Quando se trabalha com ED, a ideia é buscar agrupamento de dados, criação de tipagens de dados, e até mesmo definir novas operações entre 
+essas estruturas, otimizando o armazenamento e o desempenho.
+
+Exemplo de estrutura: precisamos criar um sistema para armazenar os nomes, idades e alturas de pessoas. Para tal tarefa pode-se utilizar
+estruturas de dados que agrupam esses dados, criando um novo tipo chamado Pessoa. 
+
+Onde são usadas estruturas de dados? 
+	* Sistemas de alta taxa de escrita/leitura.
+	* Sistemas de grande fluxo(stream) de dados.
+	* Sistemas de grande variação no fluxo de dados.
+	* Sistemas de simulação.
+	* Desenvolvimentos de jogos.

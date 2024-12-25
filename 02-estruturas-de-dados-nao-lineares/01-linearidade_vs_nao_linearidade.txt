@@ -1,0 +1,103 @@
+Linearidade vs Não Linearidade.
+
+
+Alocação:
+    1. Quando criamos uma variável basicamente reservamos (alocamos) um local na memória RAM para essa
+       variável.
+            * A memória RAM é onde o sistema operacional e os programas armazenam dados temporiariamente 
+              enquanto estão em execução.
+    
+    2. Cada tipo de dado demanda um determinado espaço para que a variável seja alocada em memória.
+
+Em C, o tamanho de cada tipo de dado depende da arquitetura do sistema operacional e do compilador
+utilizado. Em arquiteturas modernas, como as de 32 bits ou 64 bits, os tamanhos geralmente seguem
+o seguinte padrão:
+
+    char: 1 byte.
+    int: 4 bytes.
+    float: 4 bytes.
+    double: 8 bytes.
+
+Alocação na memória RAM:
+    - Como um programa é alocado em memória? quem se encarrega dessa tarefa é o sistema operacional.
+      De forma bem resumida: O sistema operacional busca o programa armazenado no hd para a memória ram,
+      para que assim o programa possa ser executado. 
+
+    - Variáveis geralmente são alocadas em três lugares da memória RAM: 
+        1. Na pilha: Variáveis locais dentro de funções. A alocação e liberação são automáticas.
+        2. No heap: Variáveis alocadas dinamicamente, onde o programador controla a alocação e liberação.
+        3. Na Memória estática: Variáveis globais e estáticas, com alocação no início e duração até o fim 
+           do programa.
+
+    - Dados são alocados continuamente na memória: A alocação de dados não necessariamente é continua 
+      na memória, depende qual o tipo de dado alocado, o tipo de alocação e do sistema operacional. 
+
+    - Alocação estática: Memória estática (dados globais e variáveis estáticas), durante a compilação, o 
+                         espaço para essas variáveis é reservado de forma contínua no segmento de dados 
+                         da memória. 
+                         
+                         Como o sistema sabe exatamente o tamanho e o número de variáveis durante a 
+                         compilação, ele pode alocar blocos de memória consecutivos, tornando o  
+                         armazenamento de variáveis continuo.
+
+    - Alocação dinâmica: Memória do heap. durante a execução, quando o programa solicita memória dinâmica 
+                         o sistema operacional aloca o espaço solicitado (usando funções como malloc, new
+                         e calloc).
+                          
+    - Em linguagens de alto nível utilizamos estruturas e não nos importamos de que forma os dados estão
+      sendo armazenados físicamente. 
+
+Estrutura linear: Uma estrutura de dados é chamada de linear quando os elementos são organizados em uma   
+                  sequência ou linha, onde cada elemento tem um predecessor e um sucessor (exceto o 
+                  primeiro e o último).
+
+                  1. Características: 
+                      * Os dados são armazenados de forma continua ou sequencial.
+                      * Cada elemento está conectado ao próximo (e, em alguns casos, ao anterior).
+                      * Geralmente, permite acesso sequencial ou indexado.
+                      * Simples de implementar e eficiente para muitas operações básicas.
+                  
+                  2. Exemplos de estruturas lineares:
+                      * Arrays (vetores).
+                      * Linked List (Lista ligada).
+                      * Queue  (Fila).
+                      * Stack (pilha).
+                  
+                  3. Vantagens de estruturas lineares:
+                      * Fácil implementação.
+                      * Eficiência em operações como busca e iteração para conjuntos pequenos.
+                  
+                  4. Desvantagens:
+                      * Inserção e remoção podem ser ineficientes. 
+                      * Menos flexíveis para representar relações complexas entre dados.
+
+Estrutura não linear: Uma estrutura de dados é chamada de não linear quando os elementos não estão 
+                      organizados em uma sequência. Em vez disso, eles podem estar conectados de 
+                      maneira hierárquica, em rede ou arbitrária.
+                  
+                  1. Características:
+                      * Os elementos podem estar conectados em múltiplas direções ou níveis.
+                      * Representam relações mais complexas entre os dados.
+                      * Acesso aos elementos geralmente é feito por meio de navegação ou pesquisa (Não
+                        sequencial)
+                      * Mais difícil de implemtar, mas necessária para problemas complexos.
+                  
+                  2. Exemplos de estruturas não lineares:
+                      * Trees (Árvores).
+                      * Graphs (Grafos).
+                      * Hash Tables (Tabelas hash).
+                      * Heap: 
+                        - uma árvore binária especializada, usada principalmente em algoritmos de 
+                          ordenação e priorização (Como filas de prioridade)
+                        - Exemplos: Min-heap, Max-heap
+                  
+                  3. Vantagens:
+                      * Excelente para representar relações complexas (Hierarquia, Redes).
+                      * Melhor desempenho em cenários onde conexões ou relacionamentos entre os dados 
+                        são importantes.
+                  
+                  4. Desvantagens:
+                      * Mais difícil de implementar e entender.
+                      * Operações básicas como inserção e busca podem ser mais lentas e complicadas.
+
+Para saber onde estruturas não lineares estão na memória no caso de C iremos usar de ponteiros.

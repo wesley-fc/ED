@@ -1,0 +1,35 @@
+Listas:
+    * Listas são comuns no dia a dia.
+        - Listas de compras.
+        - Listas de tarefas.
+    
+    * Uma lista nada mais é que o conjunto de diversos elementos organizados em uma determinada sequência
+      sendo passível de inserções e remoções. 
+
+Listas encadeadas:
+    * Na computação uma lista é implementada como uma lista encadeada.
+
+    * É uma estrutura de dados que consiste em uma coleção de nós que juntos representam uma sequência.
+        - Em sua forma mais básica, cada nó contém dados e referência para o próximo nó da sequência.
+
+    * Um nó é encadeado à outro de forma que cada nó tem:
+        - No máximo um nó subsequente.
+        - No máximo um nó antecedente.
+    
+    * Em uma lista encadeada, podem ocorrer inserções e remoções em quaisquer posições de uma lista. 
+
+Implementação em C:
+    * Uma lista é implementada com a utilização dos seguintes recursos da linguagem:
+        - Structs: que representam cada nó da nossa lista.
+        - Ponteiros: realizam o encadeamento entre um nó e outro.
+        - Alocação dinâmica: responsável por reservar espaço de memória em tempo de execução para novos
+                             nós da lista.  
+        
+Pontos positivos:
+    * Alocação sob-demanda.
+    * Inserção e Remoção no meio da estrutura não necessita de realocação dos demais elementos 
+      já existentes.
+
+Pontos negativos:
+    * Tempo Linear de acesso aos elementos O(n). 
+        - Com exceção de operações no primeiro elemento(head) da lista que são O(1).  

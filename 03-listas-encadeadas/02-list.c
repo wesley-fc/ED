@@ -27,16 +27,23 @@ void push_back(float x, float y){
     Node *p = (Node*) malloc(sizeof(Node));
     p->x = x;
     p->y = y;
+    // Se p->next não for explicitamente definido como NULL, ele pode conter um valor aleatório, levando 
+    // a resultados inesperados.
+    p->next = NULL; 
 
+    // Se a lista estiver vazia, o novo nó é o primeiro.
     if(lista_pontos == NULL){
         lista_pontos = p;
         return;
     }
 
+    // Percorre a lista até o último nó.
     Node *temp = lista_pontos;
     while(temp->next != NULL){
         temp = temp->next;
     }
+
+    // Conecta o novo nó no final da lista.
     temp->next = p;
 }
 
@@ -56,11 +63,12 @@ void display_list(Node *lista){
 
 int main(void)
 {
-    // push_front(1, 2);
-    // push_front(3, 4);
-    // push_front(5, 6);
+    push_front(1, 2);
+    push_front(3, 4);
+    push_front(5, 6);
     
     push_back(7, 8);
+    push_back(9, 10);
 
     display_list(lista_pontos);
 

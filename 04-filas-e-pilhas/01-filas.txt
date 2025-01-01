@@ -1,0 +1,31 @@
+Filas:
+    * Filas estão presentes no nosso dia a dia:
+        - Fila no banco.
+        - Fila para compra de ingressos.
+    
+    * Uma fila nada mais é que um conjunto de elementos ordenados segundo um determinado critério.
+    * Na computação uma fila é um caso particular de lista.
+    * Um elemento é encadeado em outro da mesma forma que uma lista:
+        - no máximo um elemento subsequente.
+        - no máximo um elemento antecedente.
+    * Diferentemente de uma lista, em uma fila os elementos só podem ser inseridos no final, e a remoção
+      só pode ser feita no ínicio.
+        - Exemplo: fila de banco, pessoas que chegam primeiro são atendidas primeiro (remoção no ínicio)
+                   e pessoas que chegam depois ficam mais no final da lista (inserção no final).
+
+Filas em C:
+    * Uma fila é implementada com a utilização de:
+        - Structs: que representam cada um dos elementos da lista(fila).
+        - Ponteiros: realizam o encadeamento entre um elemento e outro.
+        - Alocação dinâmica: responsável por reservar espaço em tempo de execução para novos elementos 
+                            da lista encadeada (fila).
+                            
+Pontos positivos:
+    * Alocação sob-demanda.
+    * Inserção e remoção são feitas em locais específicos da estrutura e portanto facilitam a 
+      implementação com foco no desempenho.
+
+Pontos negativos:
+    * Estruturas não estão linearmente na memória.
+        - busca por elementos se torna mais onerosa.
+    * Não permite inserção em qualquer lugar.

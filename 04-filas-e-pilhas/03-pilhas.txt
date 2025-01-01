@@ -1,0 +1,16 @@
+Pilhas:
+    * Uma pilha é uma estrutura de dados que os elementos estão, teoricamente, sobrepostos, ou seja, um 
+      elemento está sobre o outro.
+    * Isso quer dizer que só podemos adicionar um novo elemento no topo da pilhao (sobre todos os outros)
+    * E só podemos remover um elemento também do topo da pilha.  
+
+Implementação:
+    * Guardamos apenas a referência do último elemento da pilha. 
+    * Inserindo:
+        - cria um novo elemento.
+        - o prox do novo elemento aponta para o elemento no topo da pilha.
+        - o ponteiro do topo da pilha agora aponta para o meu novo elemento.
+    * Removendo:
+        - crio um ponteiro temporário que aponta para o elemento no topo da pilha.
+        - atualizo o ponteiro do topo da pilha para apontar para o próximo elemento.
+        - libero a memória associada ao elemento que o ponteiro temporário estava apontando.
